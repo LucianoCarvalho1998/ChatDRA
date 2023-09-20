@@ -46,6 +46,7 @@ public class Mensagem {
 	public Contato getReceptor() {
 		return receptor;
 	}
+	
 	public void setReceptor(Contato receptor) {
 		this.receptor = receptor;
 	}
