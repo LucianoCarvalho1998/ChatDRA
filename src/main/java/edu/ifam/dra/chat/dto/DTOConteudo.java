@@ -10,8 +10,7 @@ public class DTOConteudo {
 	private Date date;
 	private Long idEmissor;
 	private Long idReceptor;
-	
-	
+		
 	
 	public DTOConteudo() {
 		super();
