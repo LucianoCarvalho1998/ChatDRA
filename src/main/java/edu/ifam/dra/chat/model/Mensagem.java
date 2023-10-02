@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Mensagem {
@@ -16,8 +17,21 @@ public class Mensagem {
 	
 	private Calendar dataHora;
 	private String conteudo;
+	@ManyToOne
 	private Contato emissor;
+	@ManyToOne
 	private Contato receptor;
+	
+	
+	/*
+	{
+	  
+        "dataHora": "02/10/2023 17:11",
+        "conteudo": "olá boa tarde como está",
+        "emissor" : "1",
+        "receptor" : "2"
+    }
+	 */
 	
 	public Long getId() {
 		return id;
@@ -51,6 +65,4 @@ public class Mensagem {
 		this.receptor = receptor;
 	}
 	
-	
-
 }
